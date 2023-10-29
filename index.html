@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Data Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Data Generator</h1>
+    <div id="random-data">
+        <p id="random-number"></p>
+    </div>
+
+    <script>
+        function generateRandomData() {
+            const randomNumber = Math.random();
+            document.getElementById("random-number").textContent = `Random Number : ${randomNumber}`;
+        }
+
+        // Update the random data every 1000ms (1 second)
+        setInterval(generateRandomData, 1000);
+
+        // Initial data generation
+        generateRandomData();
+    </script>
+</body>
+</html>
