@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PIP Wave Powerplan</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        .normal {
+            color: white;
+            background-color: rgb(40, 40, 205);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <div class="logo-container" style="display: flex; align-items: center; justify-content: center; max-width: 100%;">
+            <div class="logo" style="flex: 0; padding: 5px;">
+                <img src="C:\xampp\htdocs\pip\logo_kemdik.png" alt="Logo Kemdikbudristek" width="60" height="60">
+            </div>
+            <div class="logo" style="flex: 0; padding: 5px;">
+                <img src="C:\xampp\htdocs\pip\logo_pkm.png" alt="Logo PKM" width="107" height="60">
+            </div>
+            <div class="logo" style="flex: 0; padding: 5px;">
+                <img src="C:\xampp\htdocs\pip\logo_upnvj.png" alt="Logo UPNVJ" width="80" height="60">
+            </div>
+            <div class="logo" style="flex: 0; padding: 5px;">
+                <img src="C:\xampp\htdocs\pip\logo_pip.png" alt="Logo PIP" width="60" height="60">
+            </div>
+        </div>
+        <br>
+        <h1 class="bg-light p-3">PIP Wave Powerplant</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box bg-light p-3" style="padding: 15px;">
+                    <h2>Voltage</h2>
+                    <p id="voltage"><?php echo $voltage; ?>V</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box bg-light p-3" style="padding: 15px;">
+                    <h2>Current</h2>
+                    <p id="current"><?php echo $current; ?>A</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box bg-light p-3" style="padding: 15px;">
+                    <h2>Power</h2>
+                    <p id="power"><?php echo $power; ?>W</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <p class="normal">Normal</p>
+    </div>
+</body>
+</html>
